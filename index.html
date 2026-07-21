@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#15100e" />
+    <title>Happy Birthday Enzo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <main class="site-shell">
+      <section id="welcome" class="screen screen--active" aria-labelledby="welcome-title">
+        <div class="studio-wall" aria-hidden="true">
+          <img class="flash flash--1" src="artwork/flash-01.jpeg" alt="" />
+          <img class="flash flash--2" src="artwork/flash-03.jpeg" alt="" />
+          <img class="flash flash--3" src="artwork/flash-04.jpeg" alt="" />
+          <img class="flash flash--4" src="artwork/flash-09.jpeg" alt="" />
+          <img class="flash flash--5" src="artwork/flash-12.jpeg" alt="" />
+          <img class="flash flash--6" src="artwork/flash-17.jpeg" alt="" />
+        </div>
+        <div class="card hero-card">
+          <span class="eyebrow">Édition spéciale · 28 ans</span>
+          <div class="hero-visual">
+            <div class="ink-ring"></div>
+            <img src="enzo-28.png" alt="Enzo avec son oud" />
+            <span class="age-stamp">28</span>
+          </div>
+          <h1 id="welcome-title">Happy Birthday <span>ENZO</span></h1>
+          <p class="tagline">28 ans de style, d’histoires et de traces qui restent.</p>
+          <div class="actions">
+            <button id="yes-button" class="button button--primary">Oui, je veux mon message</button>
+            <button id="no-button" class="button button--ghost">Non</button>
+          </div>
+          <p id="no-hint" class="no-hint" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="message" class="screen" aria-labelledby="message-title" hidden>
+        <div class="message-layout">
+        <article class="card message-card">
+          <span class="eyebrow">Pour toi, Enzo · encré à jamais</span>
+          <h2 id="message-title">Joyeux anniversaire ENZO !</h2>
+          <div class="letter">
+            <p>Même si ça fait seulement un an qu'on se connaît, tu as réussi à prendre une vraie place dans ma vie. Ce n'est pas facile pour moi d'être à l'aise avec les gens ou de créer de nouvelles amitiés, mais avec toi tout s'est fait naturellement. Je me sens toujours bien en ta présence, et c'est quelque chose de très rare pour moi.</p>
+            <p>Il y a une chose que j'admire énormément chez toi. Malgré tout ce que la vie t'a fait traverser et les difficultés que tu continues à affronter, tu es toujours là pour les autres. Tu arrives toujours à nous faire rire, à nous impressionner avec tes histoires et ton parcours, et tu gardes ce sourire qui donne envie aux autres de sourire aussi. Franchement, c'est inspirant.</p>
+            <p>Je te souhaite une longue vie remplie de bonheur, de santé et de réussite, avec ton fils et toute ta famille. Merci d'être la belle personne que tu es, et j'espère qu'on gardera cette amitié encore très longtemps. Passe une magnifique journée, tu le mérites vraiment.</p>
+          </div>
+          <button id="final-button" class="button button--primary">Encore une dernière chose…</button>
+        </article>
+        <aside class="message-reel">
+          <video id="enzo-video" controls autoplay loop playsinline preload="metadata" poster="artwork/flash-01.jpeg">
+            <source src="artwork/enzo-work.mov" type="video/mp4" />
+            <source src="artwork/enzo-work.mp4" type="video/mp4" />
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+        </aside>
+        </div>
+      </section>
+
+      <section id="final" class="screen" aria-labelledby="final-title" hidden>
+        <div class="card final-card">
+          <h2 id="final-title">Voilà… c’était ton message.</h2>
+          <p>Maintenant ferme ce site,<br /><strong>on se voit à Migraine.</strong></p>
+          <button id="replay-button" class="button button--ghost">Relire le message</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
